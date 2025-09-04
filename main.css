@@ -1,68 +1,98 @@
-body{
+body {
     background-color: #fff8f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-@media (max-width: 600px) {
-    .pizza-image {
-        max-width: 80%;
-    }
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 header {
     background-color: orange;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: white;
 }
+
 header .title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
 }
+
 header nav a {
     color: white;
     text-decoration: none;
     margin-left: 15px;
-    font: 100 16px Arial, sans-serif, bold;   
+    font-weight: bold;
+    font-size: 1rem;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    font: 100 16px Arial, sans-serif, bold;   
-    
+    font-weight: bold;
+    font-size: 1rem;
 }
-.content{
+
+.content {
     text-align: center;
     margin: 20px 0;
+    padding: 0 2rem;
 }
-.pizza-image{
+
+.pizza-image {
     max-width: 25%;
+    min-width: 200px;
     height: auto;
     border-radius: 10px;
     border: 1px solid black;
 }
-.testimonials{
+
+.testimonials {
     text-align: left;
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     border: 1px solid black;
     background-color: #fff3e0;
+    gap: 1rem;
+    padding: 1rem;
 }
-h2{
+
+h2 {
     color: orange;
-    font: 100 24px Arial, sans-serif, bold; 
+    font-weight: bold;
+    font-size: 1.5rem;
     padding: 20px;
 }
-footer{
+
+footer {
     background-color: orange;
     color: white;
     text-align: center;
-    padding: 10px;z
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .content, .testimonials {
+        padding: 1rem;
+    }
+    .pizza-image {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .testimonials {
+        flex-direction: column;
+        font-size: 0.95rem;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .title {
+        font-size: 1.5rem;
+    }
 }
