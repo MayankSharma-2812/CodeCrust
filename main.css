@@ -1,7 +1,16 @@
 body{
     background-color: #fff8f2;
 }
- header {
+@media (max-width: 600px) {
+    .pizza-image {
+        max-width: 80%;
+    }
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+header {
     background-color: orange;
     display: flex;
     justify-content: space-between;
@@ -50,7 +59,6 @@ h2{
     color: orange;
     font: 100 24px Arial, sans-serif, bold; 
     padding: 20px;
-    /* border: 1px solid black; */
 }
 footer{
     background-color: orange;
